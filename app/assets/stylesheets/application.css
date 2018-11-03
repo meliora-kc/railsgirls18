@@ -13,7 +13,38 @@
  *= require_tree .
  *= require_self
  */
- body { padding-top: 100px; }
+ body { padding-top: 60px; }
  footer { margin-top: 100px; }
  table, td, th { vertical-align: middle; border: none; }
  th { border-bottom: 1px solid #DDD; }
+ .navbar-custom {
+  background-color: #BBBDDD;
+  border-color: #E7E7E7;
+ }
+ .navbar-custom a { font-size: 18px; }
+ .navbar-custom a:hover {
+   color: #cc0099;
+   background-color: transparent;
+   text-decoration: none;
+ }
+body {  background-image:url('gravel.png');}
+footer {
+  background-color: #ebebeb;
+  padding: 30px;
+  margin-top: 100px;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+.footer,
+.push {
+  height: 50px;
+}
